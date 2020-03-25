@@ -1,6 +1,7 @@
 import attractions.Attraction;
 import behaviours.IReviewed;
 import org.w3c.dom.Attr;
+import people.Visitor;
 import stalls.Stall;
 
 import java.util.ArrayList;
@@ -30,5 +31,11 @@ public class ThemePark {
                 }
             }
             return reviews;
+        }
+
+
+        public void visitAttraction(Visitor visitor, Attraction attraction){
+            visitor.addVisitedAttractions(attraction);
+            attraction.getVisitCount()++;
         }
     }

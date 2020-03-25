@@ -30,7 +30,8 @@ public class Visitor {
         return money;
     }
 
-    public void setVisitedAttractions(Attraction attraction){
+    public void addVisitedAttractions(Attraction attraction){
         visitedAttractions.add(attraction);
     }
+
 }
